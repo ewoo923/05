@@ -2,15 +2,18 @@
 
 int main(void)
 {
-    int num;
-    
-    printf("Input a integer:");
-    scanf("%i", &num);
+    int count;
+    char c;
 
-    if (num > 0)
-        printf("Attribute value: %i\n", num);
-    else
-        printf("Attribute value: %i\n", -num);
+    printf("Input a string:");
+    while ( ( c = getchar() ) != '\n')
+    {
+        //use "0" "9"
+        if ( c >= '0' && c <= '9' )
+            count++;
+    }
+
+    printf("There are %i digitals!\n", count);
 
     return 0;
 }
