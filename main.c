@@ -2,18 +2,19 @@
 
 int main(void)
 {
-    int count;
-    char c;
+    int num;
+    int sum=0;
+    int i;
 
-    printf("Input a string:");
-    while ( ( c = getchar() ) != '\n')
+    printf("Input a integer:");
+    scanf("%i", &num);
+
+    for (i=0; i<num; i++)
     {
-        //use "0" "9"
-        if ( c >= '0' && c <= '9' )
-            count++;
+        sum = sum + i + 1;
     }
 
-    printf("There are %i digitals!\n", count);
+    printf("Sum result is %i\n", sum);
 
     return 0;
 }
