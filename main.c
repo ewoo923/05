@@ -8,11 +8,9 @@ int main(void)
     scanf("%i", &num);
 
     if (num > 0)
-        printf("Positive!\n");
-    else if (num < 0)
-        printf("Negative!\n");
+        printf("Attribute value: %i\n", num);
     else
-        printf("zero!\n");
+        printf("Attribute value: %i\n", -num);
 
     return 0;
 }
